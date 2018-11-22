@@ -1,0 +1,41 @@
+git init
+git add 
+git commit -m
+
+git clone //descarga el repositorio remoto 
+
+git pull //descarga el repositorio remoto  
+git pull origin develop:develop //te bajas una rama(nombreRama:nombreQueSeGuarda)
+git pull --rebase //pone tu commit al final del repo que bajas
+
+git push //sube a repositorio remoto
+
+
+git checkout nombreRama //cambia de rama
+git checkout -b nombreRama //crea rama y te mueve a esta directamente
+
+git branch //indica en que rama estás y lista las locales
+git branch nombreRama //crea rama
+git branch -d nombreRama //elimina rama localmente
+git branch -D nombreRama //elimina rama local que no ha sido mergeada ni subida
+gir branch -a //lista todas las ramas
+git branch -r //lista las ramas remotas
+
+git push origin --delete nombreRama //elimina la rama remota
+git push origin -u origin nombreRama //sube el contenido de la rama
+
+git fetch -p //actualiza las ramas locales con las ramas remotas
+git fetch //te bajas el repo de la rama actual
+
+git merge origin/nombreRama
+git merge --squash otraRama //se mergea la rama sin hacer commit
+
+
+
+git fetch --prune // --prune es lo mismo que -p(-p ya no existe en la docu)
+git checkout --track origin/nombreRama //creas nueva rama en local ^^^^^^,
+					 te mueves y la sincronizas
+
+git reset --soft HEAD~1  deshace el ultimo commit sin borrar los cambios (local)
+git reset --hard HEAD~1  deshace el ultimo commit y borra los cambios (local)
+

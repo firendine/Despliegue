@@ -1,0 +1,43 @@
+
+
+Entorno de: pruebas, preproducción, producción...
+
+
+1er Ordenador [desarrollador] Propio -> donde nosotros trabajamos
+
+2ndo(o +) "" [desarrollador] Pruebas -> ordenadores donde haremos pruebas para el cliente
+
+3er "" [cliente] Preproducción -> ordenador donde el cliente quiere probarlo para estar seguro
+
+4to "" [cliente] Producción -> ordenador donde el cliente utilizará finalmente la aplicación
+
+
+
+Lo normal ->
+
+1er ordenador -> el nuestro, donde trabajamos
+2ndo "" -> el del fondo, pruebas
+3er "" -> servidor de francia, producción
+
+
+
+v8 --> interprete de javaScript de chrome
+
+Node.js -> mediante v8 coge .js y los interpreta como si fuesen .sh
+	(bash no funciona en windows)
+
+Node -> funciona en windows y en linux
+
+javascript no tiene instrucción para crear ficheros, node sí.
+
+
+docker -> como Virtualbox
+aws    -> ""
+
+
+
+Fase de producción y preproducción:
+nunca se pone en el mismo servidor el servidor web y la base de datos
+es más barato tener dos máquinas pequeñas que una grande y al tenerlo en dos discos duros distintos trabaja de forma más optima al dedicar cada disco duro para una cosa
+
+-> jenkins <-

@@ -1,0 +1,14 @@
+{
+  "name": "1.0",
+  "version": "1.0.0",
+  "description": "\"ejemplo de node\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Silvia",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
