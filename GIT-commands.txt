@@ -1,6 +1,8 @@
 git init
 git add 
 git commit -m
+git status
+git log 
 
 git clone //descarga el repositorio remoto 
 
@@ -13,6 +15,7 @@ git push //sube a repositorio remoto
 
 git checkout nombreRama //cambia de rama
 git checkout -b nombreRama //crea rama y te mueve a esta directamente
+git checkout --track origin/nombreRama // se crea la rama nombreRama y se sincroniza con la rama remota "origin/nombreRama"
 
 git branch //indica en que rama estás y lista las locales
 git branch nombreRama //crea rama
@@ -25,17 +28,31 @@ git push origin --delete nombreRama //elimina la rama remota
 git push origin -u origin nombreRama //sube el contenido de la rama
 
 git fetch -p //actualiza las ramas locales con las ramas remotas
-git fetch //te bajas el repo de la rama actual
+git fetch //te baja la rama remota a tu "repositorio local-remoto"
 
 git merge origin/nombreRama
 git merge --squash otraRama //se mergea la rama sin hacer commit
+//Con git merge solo se pueden fusionar las ramas locales o ramas locales e intermedias , no se puede hacer con las ramas remotas.
+//Para actualizar los cambios se hace "git fetch --prune" y para mergear los cambios "git merge origin/azucar".				       
+					
+git reset --soft HEAD~1 // deshace el ultimo commit sin borrar los cambios (local)
+git reset --hard HEAD~1 // deshace el ultimo commit y borra los cambios (local)
+git reset // borra los cambios desde el ultimo commit (no borra el commit)(local)
+
+
+				       _
+git fetch --prune //(--prune == -p)     \creas nueva rama en local y 
+git checkout --track origin/nombreRama _/te mueves y la sincronizas
 
 
 
-git fetch --prune // --prune es lo mismo que -p(-p ya no existe en la docu)
-git checkout --track origin/nombreRama //creas nueva rama en local ^^^^^^,
-					 te mueves y la sincronizas
 
-git reset --soft HEAD~1  deshace el ultimo commit sin borrar los cambios (local)
-git reset --hard HEAD~1  deshace el ultimo commit y borra los cambios (local)
+
+
+
+
+
+
+
+
 
