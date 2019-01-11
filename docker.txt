@@ -1,0 +1,19 @@
+docker -> hacer maquinas virtuales
+
+
+docker hub -> servidor donde están todas las imagenes que puedes descargar de docker (al igual que npm es el servidor de ese mismo comando de donde descargas todo)
+
+
+
+con docker container run, si no asignas nombre, se le asigna uno aleatorio. Si queremos ponerle uno, para diferenciarlo, lo acompañamos de tuNombre_...
+
+docker container run -p 23:3306
+--name _silvia
+
+
+ docker container run -d -p 3323:3306 --name silvia_apache
+
+
+
+
+config.js.php
